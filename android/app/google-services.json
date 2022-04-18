@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1069146636053",
+    "project_id": "mind1-ad310",
+    "storage_bucket": "mind1-ad310.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1069146636053:android:16514a4f882457146ef31c",
+        "android_client_info": {
+          "package_name": "com.example.magicmind"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1069146636053-2is0smf49adiasorp53jqf30gm2v433u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.magicmind",
+            "certificate_hash": "4fe8f22273b65c555870c87062e27ce339a8a725"
+          }
+        },
+        {
+          "client_id": "1069146636053-c0l836kmpavetmu5b54rbs20b5srs9e0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBM4__qjjFOzC_sZuXn4ZS1_nBYL4hfNNY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1069146636053-c0l836kmpavetmu5b54rbs20b5srs9e0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
