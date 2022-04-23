@@ -25,21 +25,21 @@ class _State extends State<morefunctionspage> {
             padding: EdgeInsets.fromLTRB(0, 0, 0, 230),
             child: Center(
                 child: Icon(
-                  Icons.sentiment_satisfied_rounded,
-                  color: Colors.white,
-                  size: 100,
-                )),
+              Icons.sentiment_satisfied_rounded,
+              color: Colors.white,
+              size: 100,
+            )),
           ),
           const Padding(
-            padding: EdgeInsets.fromLTRB(0, 0, 0, 400),
+            padding: EdgeInsets.fromLTRB(0, 300, 0, 100),
             child: Center(
                 child: Text(
-                  "Welcome to More Functions Page!",
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold),
-                )),
+              " Please Be Patient We are\n Working this Feature\n It will be availaible soon",
+              style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 30,
+                  fontWeight: FontWeight.bold),
+            )),
           ),
         ],
       ),

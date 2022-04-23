@@ -1,5 +1,8 @@
+// ignore_for_file: camel_case_types
+
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:syncfusion_flutter_calendar/calendar.dart';
 
 class calendarpage extends StatefulWidget {
   const calendarpage({Key? key}) : super(key: key);
@@ -21,25 +24,16 @@ class _State extends State<calendarpage> {
               color: Colors.black,
             ),
           ),
-          const Padding(
-            padding: EdgeInsets.fromLTRB(0, 0, 0, 230),
-            child: Center(
-                child: Icon(
-                  Icons.sentiment_satisfied_rounded,
-                  color: Colors.white,
-                  size: 100,
-                )),
-          ),
-          const Padding(
-            padding: EdgeInsets.fromLTRB(0, 0, 0, 400),
-            child: Center(
-                child: Text(
-                  "Welcome to Calendar Page!",
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold),
-                )),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(10, 40, 10, 20),
+            child: SfCalendar(
+              view: CalendarView.month,
+              firstDayOfWeek: 1,
+              initialDisplayDate: DateTime(2022, 04, 23, 10, 46),
+              initialSelectedDate: DateTime(2022, 04, 23, 10, 46),
+              allowViewNavigation: true,
+              viewNavigationMode: ViewNavigationMode.snap,
+            ),
           ),
         ],
       ),

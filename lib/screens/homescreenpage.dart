@@ -37,11 +37,10 @@ class _State extends State<homescreenpage> {
                 padding: EdgeInsets.fromLTRB(0, 70, 0, 0),
                 child: Center(
                     child: Text(
-                  "Welcome To Magic Mind\n"
-                  "Let's get started,\n"
-                  "You can start by Checking Your Mood State\n"
-                  "We also have Chart Section,\n"
-                  "Also you can check Calender Hub for your Dates",
+                  " Welcome To Magic Mind\n Let's get started,\n"
+                  " You can start by Checking Your\n Mood State.\n\n\n"
+                  " We also have Chart Section,\n"
+                  " Also you can check Calender\n Hub for your Dates.",
                   style: TextStyle(
                       color: Colors.white,
                       fontSize: 30,

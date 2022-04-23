@@ -1,7 +1,4 @@
 // ignore_for_file: camel_case_types, prefer_const_literals_to_create_immutables
-
-import 'dart:math';
-
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -182,28 +179,33 @@ class _login_ScreenState extends State<login_Screen> {
                   Center(
                     child: ElevatedButton(
                       onPressed: () {
-                        if (formkey.currentState!.validate()) {
-                          formkey.currentState!.save();
-                          SignUp(email, password);
-                        }
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const homescreen()),
+                        );
+                        // if (formkey.currentState!.validate()) {
+                        //   formkey.currentState!.save();
+                        //   SignUp(email, password);
+                        // }
                       },
 
-                      // child: const Text(
-                      //   "Login",
-                      //   style: TextStyle(
-                      //       fontWeight: FontWeight.bold, fontSize: 20),
-                      // ),
-                      child: islogin
-                          ? const Text(
-                              "Login",
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold, fontSize: 20),
-                            )
-                          : const Text(
-                              'Signup',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold, fontSize: 20),
-                            ),
+                      child: const Text(
+                        "Login",
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 20),
+                      ),
+                      // child: islogin
+                      //     ? const Text(
+                      //         "Login",
+                      //         style: TextStyle(
+                      //             fontWeight: FontWeight.bold, fontSize: 20),
+                      //       )
+                      //     : const Text(
+                      //         'Signup',
+                      //         style: TextStyle(
+                      //             fontWeight: FontWeight.bold, fontSize: 20),
+                      //       ),
                       style: ElevatedButton.styleFrom(
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20))),

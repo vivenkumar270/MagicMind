@@ -1,5 +1,4 @@
-import 'dart:ui';
-//import 'login_screen.dart';
+import 'package:magicmind/loginpage.dart';
 import 'package:flutter/material.dart';
 
 // ignore: camel_case_types
@@ -31,11 +30,11 @@ class _State extends State<welcomepage> {
               height: 65,
               child: ElevatedButton.icon(
                 onPressed: () {
-                  //   Navigator.push(
-                  //   //   context,
-                  //   // //   MaterialPageRoute(
-                  //   // //       //builder: (context) => const login_screen()),
-                  //   // // );
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const login_Screen()),
+                  );
                 },
                 style: ElevatedButton.styleFrom(
                     shape: RoundedRectangleBorder(

@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
+// currently the file is redundant and not being used
+// This file was created as a seperate signup page for app but due to complexity and space issue from
+// System capabilities the file is barred and currently not in production
 class Signup extends StatefulWidget {
   Signup({Key? key}) : super(key: key);
 

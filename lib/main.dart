@@ -1,10 +1,9 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:magicmind/loginpage.dart';
+// import 'package:magicmind/loginpage.dart';
 import 'package:magicmind/provider/authentication.dart';
-import 'package:magicmind/screens/homescreen.dart';
-//import 'package:magicmind/screens/homescreen.dart';
+import 'package:magicmind/screens/welcome.dart';
 import 'package:magicmind/themes/apptheme.dart';
 import 'package:provider/provider.dart';
 //import 'package:provider/provider.dart';
@@ -26,7 +25,7 @@ class MyApp extends StatelessWidget {
       create: (context) => GoogleSignInProvider(),
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: const login_Screen(),
+        home: const welcomepage(),
         // home: StreamBuilder<User?>(
         //     stream: FirebaseAuth.instance.authStateChanges(),
         //     builder: (context, snapshot) {
